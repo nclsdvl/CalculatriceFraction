@@ -1,6 +1,6 @@
 package Nico;
 import Nico.Fraction;
-
+import Nico.ReductionPGCD;
 import java.util.Scanner;
 
 public class Main {
@@ -10,7 +10,7 @@ public class Main {
 
 
         Fraction.CalculFraction();
-
+        ReductionPGCD.CalculPGCD( Fraction.getNumerateurSoluce(), Fraction.getDenominateurSoluce());
     }
 }
 

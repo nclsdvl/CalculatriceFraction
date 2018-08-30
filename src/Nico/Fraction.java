@@ -156,7 +156,7 @@ package Nico;
                 case 3:
                     numerateurSoluce = numerateur1 * numerateur2;
                     denominateurSoluce = denominateur1 * denominateur2;
-                    System.out.println("l'operataion à effectuer est : (" + numerateur1 + "/" + denominateur1 + ")X(" + numerateur2 + "/" + denominateur2 + ")");
+                    System.out.println("l'operataion à effectuer est : (" + numerateur1 + "/" + denominateur1 + ") X (" + numerateur2 + "/" + denominateur2 + ")");
                     System.out.println("le resultat est : " + numerateurSoluce + "/" + denominateurSoluce);
                     break;
 
