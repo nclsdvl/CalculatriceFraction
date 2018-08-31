@@ -95,6 +95,7 @@ package Nico;
         /////////////////////////////////////////////////////////
         ////////          METHODES          ////////////////////
         ///////////////////////////////////////////////////////
+
         public static String CalculFraction() {
 
             System.out.println("Veuillez entrer votre numerateur");
@@ -105,9 +106,31 @@ package Nico;
             Scanner sc2 = new Scanner(System.in);
             denominateur1 = sc1.nextInt();
 
+
+            try { int X = (numerateur1/denominateur1);}
+            catch (ArithmeticException e) {
+                System.out.println("Division par zéro !!! \nArret du programme");
+                return "";}
+
+
+
+
+
+
             System.out.println("Veuillez entrer : \n 1 pour additionner \n 2 pour soustraire \n 3 pour multiplier \n 4 pour diviser");
             Scanner sc3 = new Scanner(System.in);
             operateur = sc1.nextInt();
+
+            if ((operateur <= 0) || (operateur >4)){
+                System.out.println("Je n'ai pas compris votre choix! Merci d'entrer un chiffre entre 1 et 4 !!!!!");
+                System.out.println("Il ne vous reste plus qu'a relancer le programme ! ");
+                return "";
+            }
+
+
+
+
+
 
             System.out.println("Veuillez entrer votre numerateur");
             Scanner sc4 = new Scanner(System.in);
@@ -117,6 +140,16 @@ package Nico;
             Scanner sc5 = new Scanner(System.in);
             denominateur2 = sc1.nextInt();
             Soluce = numerateurSoluce + "/" + denominateurSoluce;
+
+            try {
+
+                int X = numerateur2/denominateur2;
+
+            } catch (ArithmeticException e) {
+
+                System.out.println("Division par zéro !!! \nArret du programme");
+                return "";
+            }
 
             switch (operateur) {
 
